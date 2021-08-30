@@ -1,0 +1,154 @@
+#main
+{    display: flex;
+    padding: 20px 2%;
+	width:1366px;
+	height:766px;
+}
+.sizes{
+	    width: 15%;
+
+background-color:#F8F8F8;
+padding:5px;
+}
+.title{
+	font-family: 'Open Sans';
+	font-size:18px;
+}
+.filters-available-size {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.filters-available-size .checkbox, .clicked-checkbox {
+
+    width: 40px;
+    height: 40px;
+    font-size: .8em;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #1b1a20;
+    background-color: #ececec;
+    border: 1px solid transparent;
+	margin:5px 3px;
+}
+.checkbox:hover{
+ border: 1px solid black;}
+.clicked-checkbox{
+  background-color: black;
+  color:white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #1b1a20;
+    font-family: 'sans-serif';
+}
+
+.right-side{
+	display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    min-height: 600px;
+}
+
+.top-bar{
+  display:flex;
+  width:100%;
+  flex-wrap: wrap;
+
+}
+.cart-icon{
+  width: 85%;
+  margin-left: 5px;
+  height:auto;
+}
+.cart-image{
+  width:5%;
+}
+.sortbtn{
+    cursor: pointer;
+    width: 130px;
+
+}
+.available-products{
+font-size:12px;
+color:grey;
+  margin:5px;
+font-weight: lighter;
+font-family: 'Open Sans';
+}
+.selected-size {
+  font-size:12px;
+  color:grey;
+  margin:5px;
+  font-weight: lighter;
+  	font-family: 'Open Sans';
+}
+.board{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.board-item{
+       width:25%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+
+
+.board-item:hover .item-cart{
+background-color:#CCCC00	;
+}
+.board-item:hover{
+border: 1px solid 	#E8E8E8;}
+
+.item-ship{
+	position: absolute;
+    color: #ececec;
+    top: 10px;
+    right: 10px;
+    font-size: 10px;
+    background-color: #1b1a20;
+    cursor: default;
+}
+
+.prodImage{
+width:245px;
+
+}
+.item-image{
+
+		padding:2px;
+		border: 0;
+}
+.item-detail{
+	position: relative;
+    padding: 2px 20px 20px 20px;
+    height: 45px;
+	color:rgb(27, 26, 32);
+     display:block;
+	font-family: 'Open Sans';
+	font-size:18px;
+}
+
+.item-price{
+	    padding-bottom:10px;
+		text-align:center;
+		font-family: 'Open Sans';
+}
+
+.item-cart{
+	background-color: #1b1a20;
+    color: #fff;
+	text-align:center;
+    padding: 15px 0;}
